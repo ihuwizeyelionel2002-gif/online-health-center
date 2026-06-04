@@ -3,41 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Online Health Center</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#f4f8fc;
+background:#f5f7fa;
 color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0066cc,#00b4d8);
+background:linear-gradient(135deg,#0077ff,#00c6ff);
 color:white;
 text-align:center;
 padding:60px 20px;
 }
 
 header h1{
-font-size:42px;
+font-size:55px;
 margin-bottom:15px;
 }
 
 header p{
-font-size:20px;
+font-size:22px;
 }
 
 nav{
-background:#004c99;
+background:#0056b3;
 padding:15px;
 text-align:center;
 }
@@ -46,102 +44,82 @@ nav a{
 color:white;
 text-decoration:none;
 margin:15px;
-font-weight:bold;
 font-size:18px;
+font-weight:bold;
 }
 
-.hero{
+section{
 padding:60px 20px;
 text-align:center;
 }
 
 .hero h2{
-font-size:36px;
-color:#0066cc;
+font-size:50px;
+color:#0077ff;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:25px;
+font-size:24px;
+max-width:900px;
+margin:auto;
 }
 
 .btn{
 display:inline-block;
-background:#28a745;
+background:#25D366;
 color:white;
-padding:15px 30px;
-text-decoration:none;
+padding:18px 35px;
 border-radius:8px;
-font-size:18px;
+text-decoration:none;
+font-size:22px;
 font-weight:bold;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-.section-title{
-text-align:center;
-font-size:34px;
-color:#0066cc;
-margin:50px 0 20px;
-}
-
-.about{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-margin-bottom:40px;
-line-height:1.8;
+margin-top:30px;
 }
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+max-width:1200px;
+margin:auto;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .card h3{
-color:#0066cc;
-margin-bottom:10px;
+color:#0077ff;
+margin-bottom:15px;
 }
 
 .contact{
-background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-margin:40px 0;
-text-align:center;
+background:#0077ff;
+color:white;
+}
+
+.contact h2{
+margin-bottom:20px;
 }
 
 .contact p{
-font-size:18px;
-margin:10px 0;
+font-size:22px;
+margin:10px;
 }
 
 footer{
-background:#003366;
+background:#002b5c;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:40px;
 }
-
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
@@ -150,110 +128,88 @@ margin-top:40px;
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 <h2>Your Health, Our Priority</h2>
+
 <p>
-Access healthcare services, consultations, medicine information and health support anytime, anywhere.
+Access healthcare services, consultations,
+medicine information and health support
+anytime, anywhere.
 </p>
 
 <a class="btn" href="https://wa.me/25761610500">
-Chat on WhatsApp
+💬 Chat on WhatsApp
 </a>
+</section>
+
+<section id="about">
+<h2 style="color:#0077ff;font-size:40px;">About Us</h2>
+<br>
+
+<p style="font-size:22px;max-width:900px;margin:auto;">
+Online Health Center provides trusted medical
+information, health guidance and online support.
+Our mission is to help people access healthcare
+services quickly and efficiently.
+</p>
 
 </section>
 
-<div class="container">
-
-<h2 class="section-title">About Us</h2>
-
-<div class="about">
-<p>
-Online Health Center is a modern healthcare platform dedicated to providing
-reliable medical information, online consultations, appointment scheduling,
-medicine guidance and healthcare support.
-
-Our mission is to make quality healthcare accessible to everyone through
-digital technology and professional healthcare services.
-</p>
-</div>
-
-<h2 class="section-title">Our Services</h2>
+<section id="services">
+<h2 style="color:#0077ff;font-size:40px;margin-bottom:40px;">
+Our Services
+</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>👨‍⚕️ General Consultation</h3>
-<p>Professional online healthcare consultation services.</p>
+<h3>🩺 Online Consultation</h3>
+<p>Professional medical consultation and guidance.</p>
 </div>
 
 <div class="card">
-<h3>💊 Pharmacy Services</h3>
-<p>Medicine information and prescription guidance.</p>
+<h3>💊 Medicine Information</h3>
+<p>Reliable information about medicines and treatments.</p>
 </div>
 
 <div class="card">
-<h3>🧪 Laboratory Services</h3>
-<p>Information about laboratory tests and diagnostics.</p>
-</div>
-
-<div class="card">
-<h3>📅 Appointment Booking</h3>
-<p>Book healthcare appointments quickly and easily.</p>
+<h3>❤️ Health Tips</h3>
+<p>Daily health advice for a better lifestyle.</p>
 </div>
 
 <div class="card">
 <h3>🚑 Emergency Support</h3>
-<p>Quick healthcare guidance during emergencies.</p>
-</div>
-
-<div class="card">
-<h3>👶 Maternal & Child Care</h3>
-<p>Healthcare services for mothers and children.</p>
-</div>
-
-<div class="card">
-<h3>🥗 Nutrition Counseling</h3>
-<p>Healthy diet and nutrition recommendations.</p>
-</div>
-
-<div class="card">
-<h3>❤️ Health Education</h3>
-<p>Trusted healthcare information and awareness.</p>
+<p>Quick response and emergency healthcare guidance.</p>
 </div>
 
 </div>
+</section>
 
-<h2 class="section-title">Contact Us</h2>
+<section class="contact" id="contact">
 
-<div class="contact">
+<h2>Contact Us</h2>
 
-<p>📞 Phone: +257 61 610 500</p>
+<p>📞 +257 61 610 500</p>
 
-<p>📧 Email: support@onlinehealthcenter.com</p>
+<p>📧 onlinehealthcenter@gmail.com</p>
 
-<p>📍 Location: Bujumbura, Burundi</p>
-
-<p>🕒 Working Hours: 24 Hours / 7 Days</p>
-
-<br>
+<p>📍 Bujumbura, Burundi</p>
 
 <a class="btn" href="https://wa.me/25761610500">
-Contact Us Now
+Contact on WhatsApp
 </a>
 
-</div>
-
-</div>
+</section>
 
 <footer>
-© 2026 Online Health Center | All Rights Reserved
+<p>© 2026 Online Health Center | All Rights Reserved</p>
 </footer>
 
 </body>
-  </html>
+</html>
